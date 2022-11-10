@@ -4,10 +4,10 @@ import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import AboutUs from "./pages/Home";
-import Services from "./pages/Login";
-import Blog from "./pages/Register";
-import Contact from "./pages/Register";
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 function App() {
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BurguerButton from "./BurguerButton";
 
@@ -15,21 +16,21 @@ function Navbar() {
           Navbar <span>Responsive</span>
         </h2>
         <div className={`links ${clicked ? "active" : ""}`}>
-          <a onClick={handleClick} href="/">
+          <Link onClick={handleClick} to="/" className="a">
             Home
-          </a>
-          <a onClick={handleClick} href="/about-us">
+          </Link>
+          <Link onClick={handleClick} to="/about-us" className="a">
             About-Us
-          </a>
-          <a onClick={handleClick} href="/services">
+          </Link>
+          <Link onClick={handleClick} to="/services" className="a">
             Services
-          </a>
-          <a onClick={handleClick} href="/contact">
+          </Link>
+          <Link onClick={handleClick} to="/contact" className="a">
             Contact
-          </a>
-          <a onClick={handleClick} href="/blog">
+          </Link>
+          <Link onClick={handleClick} to="/blog" className="a">
             Blog
-          </a>
+          </Link>
         </div>
         <div className="burguer">
           <BurguerButton clicked={clicked} handleClick={handleClick} />
@@ -55,10 +56,10 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a {
+  .a {
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 1.4rem;
   }
   .links {
     position: absolute;

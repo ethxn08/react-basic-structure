@@ -1,5 +1,51 @@
 .App {
   min-height: 100vh;
-  color: rgba(0, 0, 0, 0.816);
+  color: rgba(255, 255, 255, 0.816);
   box-sizing: border-box;
+  background-color: rgb(47, 47, 47);
+}
+
+.home {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribeFooterButton {
+  width: 150px;
+  height: 42px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
 }

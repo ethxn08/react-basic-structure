@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
       <NavContainer>
-        <h2>
+        <h2 className="activeTitle">
           Navbar <span>Responsive</span>
         </h2>
         <div className={`links ${clicked ? "active" : ""}`}>
@@ -32,7 +32,7 @@ function Navbar() {
             Blog
           </Link>
         </div>
-        <div className="burguer">
+        <div className={`${clicked ? "burguerActive" : "burguer"}`}>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
@@ -109,6 +109,20 @@ const NavContainer = styled.nav`
       display: none;
     }
   }
+  @keyframes intro{
+    from {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+  .burguerActive {
+    z-index: 1;
+    display: block;
+    animation-duration: 3s;
+    animation-name: intro;
 `;
 
 const BgDiv = styled.div`

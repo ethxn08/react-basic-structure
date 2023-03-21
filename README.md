@@ -1,6 +1,6 @@
 # Descripción 
 
-Este template trae librerías de estilo, la configuración inicial y de react-router-dom, unas páginas y componentes como el navbar por defecto para que puedas empezar un proyexto rápidamente 
+Este template trae librerías de estilo como framer-motion y bootstrap, la configuración inicial de react-router-dom, unas páginas preconfiguradas y componentes como el navbar por defecto para que puedas empezar un proyeto rápidamente.
 
 
 
